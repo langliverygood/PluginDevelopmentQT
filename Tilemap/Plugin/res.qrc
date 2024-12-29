@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>TilemapResources/style/main.qss</file>
+        <file>tilemapResources/style/main.qss</file>
     </qresource>
 </RCC>

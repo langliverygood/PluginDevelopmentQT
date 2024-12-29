@@ -37,7 +37,7 @@ void VideoPlayer::receive(const SMod::ModMetaData &m) {
 
 QString VideoPlayer::loadStyleSheet() {
     QString sheet;
-    QFile file(":/VideoPlayerResources/style/main.qss");
+    QFile file(":/videoPlayerResources/style/main.qss");
     if (file.open(QIODevice::ReadOnly)) {
         sheet = file.readAll();
     }

@@ -38,7 +38,7 @@ void Model3D::receive(const SMod::ModMetaData &m) {
 
 QString Model3D::loadStyleSheet() {
     QString sheet;
-    QFile file(":/Model3DResources/style/main.qss");
+    QFile file(":/model3DResources/style/main.qss");
     if (file.open(QIODevice::ReadOnly)) {
         sheet = file.readAll();
     }

@@ -48,7 +48,7 @@ void Tilemap::receive(const SMod::ModMetaData &) {
 
 QString Tilemap::loadStyleSheet() {
     QString sheet;
-    QFile file(":/TilemapResources/style/main.qss");
+    QFile file(":/tilemapResources/style/main.qss");
     if (file.open(QIODevice::ReadOnly)) {
         sheet = file.readAll();
     }
