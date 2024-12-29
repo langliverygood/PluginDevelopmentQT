@@ -3,10 +3,7 @@
 
 #include <QDebug>
 #include <QFile>
-#include <QLabel>
 #include <QLayout>
-#include <QObject>
-#include <QPushButton>
 
 #include "qtilemapwidget.h"
 #include "smodinterface.h"
