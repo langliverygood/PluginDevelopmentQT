@@ -97,6 +97,7 @@ func changeFile() error {
 	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/Plugin.pro", "example", fileName)
 	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/res.qrc", "Example", fileName)
 	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/example.cpp", "Example", className)
+	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/example.cpp", className+"Resources", fileName+"Resources")
 	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/example.cpp", "example.h", fileName+".h")
 	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/example.h", "EXAMPLE_H", strings.ToUpper(className)+"_H")
 	replaceInFile(tmpFolderPath+resFolderPath+"/Plugin/example.h", "Example", className)
