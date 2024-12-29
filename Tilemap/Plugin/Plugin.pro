@@ -3,6 +3,8 @@ TARGET = TilemapPlugin
 
 QT += widgets sql
 
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 QT -= gui
 
 # 定义插件相关的宏

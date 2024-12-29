@@ -3,6 +3,8 @@ TARGET = Tilemap
 
 QT += core gui widgets
 
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 # 源代码文件
 SOURCES += \
     main.cpp \
