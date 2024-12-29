@@ -1,0 +1,3 @@
+go-bindata -o=.\bindata.go resource/...
+
+go build -o build\swsclt.exe .\scaffold.go .\bindata.go
