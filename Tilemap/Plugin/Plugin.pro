@@ -22,6 +22,10 @@ SOURCES += \
     qtilemapwidget.cpp \
     tilemap.cpp
 
+# 资源文件
+RESOURCES += \
+    res.qrc
+
 # 插件的输出目录
 DESTDIR = ../bin
 
@@ -43,6 +47,13 @@ CONFIG += resources_big
 #不生成空的 debug release 目录
 CONFIG -= debug_and_release
 
-RESOURCES += \
-    res.qrc
+win32:CONFIG(debug, debug|release){
+    contains(DEFINES, WIN64) {
+    } else {
+    }
+} else:win32:CONFIG(release, debug|release){
+    contains(DEFINES, WIN64) {
+    } else {
+    }
+}
 

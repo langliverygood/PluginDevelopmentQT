@@ -34,3 +34,12 @@ CONFIG += resources_big
 #不生成空的 debug release 目录
 CONFIG -= debug_and_release
 
+win32:CONFIG(debug, debug|release){
+    contains(DEFINES, WIN64) {
+    } else {
+    }
+} else:win32:CONFIG(release, debug|release){
+    contains(DEFINES, WIN64) {
+    } else {
+    }
+}
