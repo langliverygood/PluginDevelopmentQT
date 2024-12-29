@@ -1,3 +1,3 @@
 go-bindata -o=.\bindata.go resource/...
 
-go build -o build\clt.exe .\scaffold.go .\bindata.go
+go build -o build\scaffold.exe .\scaffold.go .\bindata.go
