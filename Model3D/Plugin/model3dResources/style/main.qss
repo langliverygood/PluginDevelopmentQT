@@ -1,0 +1,4 @@
+QWidget#main_widget
+{
+background:#14141e;
+}

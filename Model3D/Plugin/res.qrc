@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>model3dResources/style/main.qss</file>
+    </qresource>
+</RCC>
