@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>navigationResources/image/01.png</file>
+        <file>navigationResources/image/01-1.png</file>
+        <file>navigationResources/image/02.png</file>
+        <file>navigationResources/image/02-2.png</file>
+        <file>navigationResources/image/03.png</file>
+        <file>navigationResources/image/03-3.png</file>
+        <file>navigationResources/image/04.png</file>
+        <file>navigationResources/image/04-4.png</file>
+        <file>navigationResources/image/05.png</file>
+        <file>navigationResources/image/05-5.png</file>
+        <file>navigationResources/image/19@2x.png</file>
+        <file>navigationResources/image/assessment.png</file>
+        <file>navigationResources/image/assessment@2x.png</file>
+        <file>navigationResources/image/control.png</file>
+        <file>navigationResources/image/control@2x.png</file>
+        <file>navigationResources/image/investigate.png</file>
+        <file>navigationResources/image/investigate@2x.png</file>
+        <file>navigationResources/image/logo.png</file>
+        <file>navigationResources/image/logo@2x.png</file>
+        <file>navigationResources/image/setting.png</file>
+        <file>navigationResources/image/setting@2x.png</file>
+        <file>navigationResources/image/setting_new.png</file>
+        <file>navigationResources/image/strike.png</file>
+        <file>navigationResources/image/strike@2x.png</file>
+        <file>navigationResources/image/train.png</file>
+        <file>navigationResources/image/train@2x.png</file>
+        <file>navigationResources/font/HarmonyOS_Sans_SC_Regular.ttf</file>
+        <file>navigationResources/style/main.qss</file>
+    </qresource>
+</RCC>
