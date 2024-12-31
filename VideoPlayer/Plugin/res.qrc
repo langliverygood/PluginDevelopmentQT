@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>videoplayerResources/style/main.qss</file>
+        <file>videoplayerResources/font/HarmonyOS_Sans_SC_Regular.ttf</file>
     </qresource>
 </RCC>

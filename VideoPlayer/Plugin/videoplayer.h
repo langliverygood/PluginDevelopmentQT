@@ -4,6 +4,7 @@
 #include <QApplication>
 #include <QDebug>
 #include <QFile>
+#include <QFontDatabase>
 #include <QLayout>
 
 #include "smodinterface.h"
