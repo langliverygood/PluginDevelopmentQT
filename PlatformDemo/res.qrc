@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>platformdemoResources/style/main.qss</file>
+        <file>platformdemoResources/image/bj.png</file>
+        <file>platformdemoResources/font/HarmonyOS_Sans_SC_Regular.ttf</file>
+    </qresource>
+</RCC>

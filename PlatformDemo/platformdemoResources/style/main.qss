@@ -1,0 +1,16 @@
+*{
+    outline:none;
+    background:transparent;
+}
+QWidget{
+    background:#010206;
+}
+QPushButton,QLabel{
+    background:transparent;
+}
+
+QWidget#lodding_widget{
+    background-image: url(":/resource/images/bj.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}

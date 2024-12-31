@@ -1,24 +1,24 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QApplication>
+#include <QDebug>
+#include <QFile>
+#include <QFontDatabase>
+#include <QLayout>
 #include <QMainWindow>
-#include <QFont>
 
-class MainWindow : public QMainWindow
-{
+#include "pluginsmanager.h"
+
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = 0);
+    MainWindow(QWidget* parent = 0);
     ~MainWindow();
-private:
-    QWidget* initUI();
-    QString loadStyleSheet();
-    QFont loadFonts();
-    void addPlugins();
-    void jump2Page(int index=0);
-    void changeStacked(int index=0);
 
+private:
+    QString loadStyleSheet();
 };
 
-#endif // MAINWINDOW_H
+#endif  // MAINWINDOW_H
