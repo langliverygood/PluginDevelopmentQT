@@ -6,6 +6,9 @@ Tilemap::~Tilemap() {
     if (main_widget_) {
         main_widget_->deleteLater();
     }
+    if (tilemap_) {
+        tilemap_->Release();
+    }
     main_widget_ = nullptr;
 }
 
@@ -21,20 +24,21 @@ QWidget *Tilemap::widget(int) {
     main_layout->setMargin(0);
 
     // 加载卫星地图
-    QTileMapWidget *tilemap = new QTileMapWidget();
+    tilemap_ = new QTileMapWidget();
     QString tilemap_file = QApplication::applicationDirPath() +
                            "/tilemap/卫星(影像).谷歌-永暑岛-L0-L18-分辨率0.59米.mbtiles";
     float centerPointLon = 112.865964;
     float centerPointLat = 9.555737;
     int minLevel = 15;
     int maxLevel = 18;
-    tilemap->SetFrozenDrag(false);
-    tilemap->SetReversalMode(true);
-    tilemap->ConnectSQLiteDB(tilemap_file);
-    tilemap->MoveToPoint(Coord_LL(centerPointLon, centerPointLat), minLevel);
-    tilemap->LimitLevel(minLevel, maxLevel);
+    tilemap_->SetFrozenDrag(false);
+    tilemap_->SetReversalMode(true);
+    tilemap_->ConnectSQLiteDB(tilemap_file);
+    tilemap_->MoveToPoint(Coord_LL(centerPointLon, centerPointLat), minLevel);
+    tilemap_->LimitLevel(minLevel, maxLevel);
 
-    main_layout->addWidget(tilemap);
+    main_layout->addWidget(tilemap_);
+
     return main_widget_;
 }
 

@@ -23,6 +23,7 @@ public:
 
 private:
     QWidget *main_widget_;
+    QTileMapWidget *tilemap_;
     QStringList helps_;
 
 private:
